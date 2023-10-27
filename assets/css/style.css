@@ -1,0 +1,258 @@
+.container{
+    font-family: 'Playfair Display', serif;
+}
+
+:root{
+    --text-primary-- : #626262;
+    --text-secondary-- : #b4ad9e;
+    --sign-up-bg-color-- : #f0f0f0;
+    --sign-up-text-color-- : #333333;
+}
+
+/* ########## CSS FOR HERO-SECTION STARTS HERE ######## */
+
+.hero-section{
+    padding-top: 70px;
+    margin-bottom: 95px;
+}
+
+.navbar-default.mainnavbar{
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+}
+
+.navbar-default.mainnavbar .navbar-nav>li>a {
+    color: #626262;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mainnavbar .nav>li {
+    margin-left: 90px;
+}
+
+.hero-img img {
+    width: 100%;
+    margin-top: -7vh;
+}
+
+.mainnavbar .navbar-collapse{
+    padding: 0px;
+}
+
+.mainnavbar .navbar-brand{
+    padding-left: 0px;
+}
+
+/* ########## CSS FOR FEATURE-SECTION STARTS HERE ########## */
+
+.sec-heading{
+    font-size: 14px;
+    color: var(--text-secondary--);
+    text-transform: uppercase;
+    margin: 0px 0px 28px;
+    font-weight: bold;
+}
+.pri-heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-primary--);
+    margin: 0px 0px 32px;
+}
+.para{
+    margin: 0 0 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-primary--);
+}
+.feature-section textarea{
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+}
+.feature-diary .sec-heading.sec{
+    margin: 0px;
+}
+.comment{
+    position: relative;
+    margin-bottom: 20px;
+}
+.comment i {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 15px;
+}
+.active{
+    width: 45%;
+    display: inline-block
+}
+.active img{
+    height: 280px;
+    margin-bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+.active:nth-child(even){
+    margin-left: 91px;
+}
+
+/* ########### CSS FOR SIGN-UP SECTION STARTS HERE ######### */
+
+.sign-up{
+    margin-top : 70px;
+    margin-bottom: 100px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: var(--sign-up-bg-color--);
+}
+.newsletter h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--sign-up-text-color--);
+    text-align: center;
+    margin: 0px 0px 55px;
+}
+.form-group{
+    position: relative;
+    margin: 0px;
+}
+.form-group input{
+    width: 100%;
+    padding: 14px 0px 14px 5px;
+    background-color: #f0f0f0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid #000;
+}
+.form-group i {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    font-size: 20px;
+}
+.btnn button{
+    padding : 20px 35px 20px 35px;
+    border: 1px solid #000;
+    border-radius: 0px;
+    margin-bottom:60px;
+    font-weight: bold;
+}
+
+/* ######### CSS FOR FOOTER SECTION STARTS HERE ######### */
+
+.footer{
+    padding-top: 40px;
+    padding-bottom: 45px;
+    background-color: var(--sign-up-bg-color--);
+}
+.foot ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.foot ul>li{
+    display: inline-block;
+    margin-right: 16px;
+}
+.foot ul span{
+    margin-left: 15px;
+}
+.foot ul li a{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+.foot li:last-child {
+    width: 74%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1200px){
+    .active:nth-child(even){
+        margin-left: 74px;
+    }  
+    .foot li:last-child {
+        width: 63%;
+    }
+    .footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}
+@media all and (max-width : 992px){
+    .mainnavbar .nav>li {
+        margin-left: 20px;
+    }
+    .active{
+        width: 100%;
+    }
+    .active:nth-child(even){
+        margin-left: 0px;
+    }
+    .sign-up{
+        margin-bottom: 60px;
+        margin-top: 35px;
+    }
+    .foot li:last-child {
+        width: 55%;
+    }
+}
+@media all and (max-width : 768px){
+    .mainnavbar .nav>li {
+        margin-left: 0px;
+    }
+    .navbar-default.mainnavbar .navbar-toggle:focus, 
+    .navbar-default.mainnavbar .navbar-toggle:hover {
+        background-color: transparent;
+        border: 2px solid;
+    }
+    .mainnavbar .navbar-toggle{
+        margin-right: 0px;
+    } 
+    .active{
+        width: 100%;
+    }
+    .active:nth-child(even){
+        margin-left: 0px;
+    }
+    .foot li:last-child {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    .hero-section {
+        padding-top: 25px;
+    }
+    
+    @media all and (min-width: 768px){
+        .mainnavbar .nav>li {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .hero-img img {
+        margin-top: -3vh;
+    } 
+}
